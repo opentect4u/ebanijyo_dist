@@ -308,7 +308,12 @@ const routes = [
             { path: 'contact', loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_contact_contact_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/contact/contact.module */ 73603)).then(m => m.ContactModule), data: { breadcrumb: 'Contact' } },
             { path: 'sign-in', loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_sign-in_sign-in_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/sign-in/sign-in.module */ 41447)).then(m => m.SignInModule), data: { breadcrumb: 'Sign In ' } },
             { path: 'brands', loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_ngx-pagination___ivy_ngcc___dist_ngx-pagination_js"), __webpack_require__.e("src_app_pages_brands_brands_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./pages/brands/brands.module */ 92486)).then(m => m.BrandsModule), data: { breadcrumb: 'Brands' } },
-            { path: 'products', loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_ngx-pagination___ivy_ngcc___dist_ngx-pagination_js"), __webpack_require__.e("src_app_pages_products_products_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./pages/products/products.module */ 47827)).then(m => m.ProductsModule), data: { breadcrumb: 'All Products' } }
+            { path: 'products', loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_ngx-pagination___ivy_ngcc___dist_ngx-pagination_js"), __webpack_require__.e("src_app_pages_products_products_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./pages/products/products.module */ 47827)).then(m => m.ProductsModule), data: { breadcrumb: 'All Products' } },
+            { path: 'about', loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_about_about_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/about/about.module */ 20654)).then(m => m.AboutModule), data: { breadcrumb: 'About Us' } },
+            { path: 'terms', loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_terms_terms_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/terms/terms.module */ 45426)).then(m => m.TermsModule), data: { breadcrumb: 'Terms & Conditions' } },
+            { path: 'faq', loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_faq_faq_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/faq/faq.module */ 59509)).then(m => m.FaqModule), data: { breadcrumb: 'FAQ' } },
+            { path: 'privacy', loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_privacy_privacy_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/privacy/privacy.module */ 45417)).then(m => m.PrivacyModule), data: { breadcrumb: 'Privacy Policy' } },
+            { path: 'refund', loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_refund_refund_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/refund/refund.module */ 56105)).then(m => m.RefundModule), data: { breadcrumb: 'Cancellation & Refund Policy' } }
         ]
     },
     { path: 'landing', loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_landing_landing_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./landing/landing.module */ 73707)).then(m => m.LandingModule) },
@@ -4425,9 +4430,9 @@ class FooterComponent {
         this.snackBar = snackBar;
         this.router = router;
         // public lat: number = 40.678178;
-        this.lat = 22.5152;
+        this.lat = 22.717515511745862;
         // public lng: number = -73.944158;
-        this.lng = 88.3933;
+        this.lng = 88.36754494355857;
         this.zoom = 12;
     }
     ngOnInit() { }
@@ -4444,7 +4449,7 @@ class FooterComponent {
     }
 }
 FooterComponent.ɵfac = function FooterComponent_Factory(t) { return new (t || FooterComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](src_app_app_service__WEBPACK_IMPORTED_MODULE_0__.AppService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_2__.MatSnackBar), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__.Router)); };
-FooterComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: FooterComponent, selectors: [["app-footer"]], decls: 74, vars: 7, consts: [[1, "bg-primary", "footer"], ["fxLayout", "column", "fxLayout.gt-sm", "row wrap", "fxLayoutAlign", "center center", 1, "border-bottom-mute", "subscribe-block", "theme-container"], ["fxFlex", "100", "fxFlex.gt-sm", "40", "fxLayout", "column", "fxLayoutAlign", "center center"], [1, "fw-500"], [1, "fw-300", "secondary-color"], ["method", "get", "fxLayout", "row", "fxFlex", "100", "fxFlex.gt-sm", "42.4", "ngClass.sm", "mt-2", "ngClass.xs", "mt-2", 1, "subscribe-search-form"], ["type", "text", "placeholder", "Your email address...", "fxFlex", ""], ["mat-raised-button", "", "color", "accent", "type", "button", 1, "mat-elevation-z0", "text-muted", 3, "click"], ["fxLayout", "row wrap", "fxLayoutAlign", "space-between", 1, "py-3", "border-bottom-mute", "theme-container"], ["fxFlex", "100", "fxFlex.gt-sm", "20", "fxFlex.sm", "40"], [1, "col-title"], [1, "mt-1"], ["routerLink", "/contact", 1, "link", "secondary-color"], ["href", "javascript:void(0);", 1, "link", "secondary-color"], [1, "link", "secondary-color", 2, "cursor", "pointer", 3, "click"], ["fxFlex", "100", "fxFlex.gt-sm", "30", "fxFlex.sm", "60", "ngClass.xs", "mt-2", 1, "contact-information"], ["fxLayout", "row", "fxLayoutAlign", "start center", 1, "mt-2", "secondary-color"], ["fxLayout", "row", "fxLayoutAlign", "start center", 1, "mt-1", "secondary-color"], ["fxFlex", "100", "fxFlex.gt-sm", "50", "ngClass.sm", "mt-2", "ngClass.xs", "mt-2"], [3, "latitude", "longitude", "zoom", "mapTypeControl"], [3, "latitude", "longitude", "markerDraggable"], ["fxLayout", "row", "fxLayout.xs", "column", "fxLayoutAlign", "space-between center", 1, "copyright", "secondary-color", "theme-container"], ["ngClass.xs", "mt-1"], ["mat-button", "", "href", "https://synergicsoftek.in/", "target", "_blank"]], template: function FooterComponent_Template(rf, ctx) { if (rf & 1) {
+FooterComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: FooterComponent, selectors: [["app-footer"]], decls: 64, vars: 7, consts: [[1, "bg-primary", "footer"], ["fxLayout", "column", "fxLayout.gt-sm", "row wrap", "fxLayoutAlign", "center center", 1, "border-bottom-mute", "subscribe-block", "theme-container"], ["fxFlex", "100", "fxFlex.gt-sm", "40", "fxLayout", "column", "fxLayoutAlign", "center center"], [1, "fw-500"], [1, "fw-300", "secondary-color"], ["method", "get", "fxLayout", "row", "fxFlex", "100", "fxFlex.gt-sm", "42.4", "ngClass.sm", "mt-2", "ngClass.xs", "mt-2", 1, "subscribe-search-form"], ["type", "text", "placeholder", "Your email address...", "fxFlex", ""], ["mat-raised-button", "", "color", "accent", "type", "button", 1, "mat-elevation-z0", "text-muted", 3, "click"], ["fxLayout", "row wrap", "fxLayoutAlign", "space-between", 1, "py-3", "border-bottom-mute", "theme-container"], ["fxFlex", "100", "fxFlex.gt-sm", "20", "fxFlex.sm", "40"], [1, "col-title"], [1, "mt-1"], ["routerLink", "/contact", 1, "link", "secondary-color"], ["routerLink", "/about", 1, "link", "secondary-color"], [1, "link", "secondary-color", 2, "cursor", "pointer", 3, "click"], ["routerLink", "/faq", 1, "link", "secondary-color"], ["routerLink", "/terms", 1, "link", "secondary-color"], ["routerLink", "/privacy", 1, "link", "secondary-color"], ["routerLink", "/refund", 1, "link", "secondary-color"], ["fxFlex", "100", "fxFlex.gt-sm", "30", "fxFlex.sm", "60", "ngClass.xs", "mt-2", 1, "contact-information"], ["fxLayout", "row", "fxLayoutAlign", "start center", 1, "mt-2", "secondary-color"], ["fxLayout", "row", "fxLayoutAlign", "start center", 1, "mt-1", "secondary-color"], ["fxFlex", "100", "fxFlex.gt-sm", "50", "ngClass.sm", "mt-2", "ngClass.xs", "mt-2"], [3, "latitude", "longitude", "zoom", "mapTypeControl"], [3, "latitude", "longitude", "markerDraggable"], ["fxLayout", "row", "fxLayout.xs", "column", "fxLayoutAlign", "space-between center", 1, "copyright", "secondary-color", "theme-container"], ["ngClass.xs", "mt-1"], ["mat-button", "", "href", "https://synergicsoftek.in/", "target", "_blank"]], template: function FooterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "footer", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 2);
@@ -4485,39 +4490,39 @@ FooterComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "p", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](25, "a", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](25, "a", 15);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "FAQ");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "p", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](28, "a", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](28, "a", 16);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Terms & Conditions");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](30, "p", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "a", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "a", 17);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Privacy Policy");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "p", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "a", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "a", 18);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Cancellation & Refund Policy");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](36, "div", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](36, "div", 19);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](37, "h3", 10);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "CONTACT INFORMATION");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](39, "p", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](39, "p", 20);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](40, "mat-icon");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](41, "location_on");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](42, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](43, " Sector 1, 1858/1, Rajdanga Main Rd, East Kolkata Twp, Kolkata, West Bengal 700107");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](43, " 85 Thana Road, Khardah, PO:B D Sopan, Kolkata-700116");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](44, "p", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](44, "p", 21);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](45, "mat-icon");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](46, "call");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -4525,7 +4530,7 @@ FooterComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](48, "+91 9674147178");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](49, "p", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](49, "p", 21);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](50, "mat-icon");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](51, "mail_outline");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -4533,43 +4538,27 @@ FooterComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](53, "info@ebanijyo.com");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](54, "p", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](55, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](56, "schedule");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](57, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](58, "Mon - Sun / 9:00AM - 8:00PM");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](59, "p", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](60, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](61, "directions_bus");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](62, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](63, "Routes to us");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](54, "div", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](55, "agm-map", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](56, "agm-marker", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](64, "div", 18);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](65, "agm-map", 19);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](66, "agm-marker", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](57, "div", 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](58, "p", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](59, "Copyright \u00A9 2022 All Rights Reserved");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](67, "div", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](68, "p", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](69, "Copyright \u00A9 2022 All Rights Reserved");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](70, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](71, "Designed & Developed by ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](72, "a", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](73, "Synergic Softek Solutions Pvt. Ltd.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](60, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](61, "Designed & Developed by ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](62, "a", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](63, "Synergic Softek Solutions Pvt. Ltd.");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](65);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](55);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("latitude", ctx.lat)("longitude", ctx.lng)("zoom", ctx.zoom)("mapTypeControl", true);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("latitude", ctx.lat)("longitude", ctx.lng)("markerDraggable", true);
