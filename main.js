@@ -1079,7 +1079,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 class globalData {
 }
-globalData.apiUrl = "https://apiebanijya.opentech4u.co.in/";
+// public static apiUrl="https://apiebanijya.opentech4u.co.in/";
+globalData.apiUrl = "https://api.ebanijyo.com/";
 
 
 /***/ }),
