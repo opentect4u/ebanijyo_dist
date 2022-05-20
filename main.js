@@ -1079,8 +1079,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 class globalData {
 }
-// public static apiUrl="https://apiebanijya.opentech4u.co.in/";
-globalData.apiUrl = "https://api.ebanijyo.com/";
+globalData.apiUrl = "https://apiebanijya.opentech4u.co.in/";
 
 
 /***/ }),
@@ -3324,8 +3323,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common */ 28267);
 /* harmony import */ var _angular_flex_layout_extended__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/flex-layout/extended */ 3479);
 /* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/tooltip */ 64731);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/router */ 13252);
 /* harmony import */ var _controls_controls_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../controls/controls.component */ 81924);
 /* harmony import */ var _app_models__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../app.models */ 11347);
+
 
 
 
@@ -3352,6 +3353,7 @@ function ProductDialogComponent_div_9_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("src", ctx_r0.url + "/" + image_r1.img_path, _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsanitizeUrl"]);
 } }
+const _c0 = function (a1, a2) { return ["/products", a1, a2]; };
 class ProductDialogComponent {
     constructor(appService, dialogRef, dataServe, product) {
         this.appService = appService;
@@ -3409,9 +3411,12 @@ class ProductDialogComponent {
     close() {
         this.dialogRef.close();
     }
+    showDetails() {
+        alert("hi");
+    }
 }
 ProductDialogComponent.ɵfac = function ProductDialogComponent_Factory(t) { return new (t || ProductDialogComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_app_service__WEBPACK_IMPORTED_MODULE_1__.AppService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__.MatDialogRef), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](src_app_data_service__WEBPACK_IMPORTED_MODULE_2__.DataService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__.MAT_DIALOG_DATA)); };
-ProductDialogComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: ProductDialogComponent, selectors: [["app-product-dialog"]], decls: 48, vars: 12, consts: [[1, "close-btn-outer"], ["mat-mini-fab", "", "color", "warn", 3, "click"], ["mat-dialog-content", ""], ["fxLayout", "row wrap"], ["fxFlex", "100", "fxFlex.gt-sm", "50"], [1, "swiper-container", "h-100", 3, "swiper"], [1, "swiper-wrapper"], ["class", "swiper-slide", 4, "ngFor", "ngForOf"], ["mat-icon-button", "", 1, "swiper-button-prev", "swipe-arrow"], ["mat-icon-button", "", 1, "swiper-button-next", "swipe-arrow"], ["fxFlex", "100", "fxFlex.gt-sm", "50", "ngClass.gt-sm", "px-2 m-0", "ngClass.sm", "mt-2", "ngClass.xs", "mt-2"], [1, "py-1", "lh"], [1, "text-muted", "fw-500"], ["hidden", ""], [1, "py-1"], [1, "py-1", "text-muted", "lh"], ["fxLayoutAlign", "end center", 1, "text-muted"], ["mat-icon-button", "", "matTooltip", "View full details", 3, "mat-dialog-close"], [1, "divider"], [1, "mt-2", "new-price"], [3, "product", "type"], [1, "text-muted", "py-1"], [1, "swiper-slide"], [1, "swiper-lazy", 3, "src"], [1, "swiper-lazy-preloader"]], template: function ProductDialogComponent_Template(rf, ctx) { if (rf & 1) {
+ProductDialogComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: ProductDialogComponent, selectors: [["app-product-dialog"]], decls: 48, vars: 16, consts: [[1, "close-btn-outer"], ["mat-mini-fab", "", "color", "warn", 3, "click"], ["mat-dialog-content", ""], ["fxLayout", "row wrap"], ["fxFlex", "100", "fxFlex.gt-sm", "50"], [1, "swiper-container", "h-100", 3, "swiper"], [1, "swiper-wrapper"], ["class", "swiper-slide", 4, "ngFor", "ngForOf"], ["mat-icon-button", "", 1, "swiper-button-prev", "swipe-arrow"], ["mat-icon-button", "", 1, "swiper-button-next", "swipe-arrow"], ["fxFlex", "100", "fxFlex.gt-sm", "50", "ngClass.gt-sm", "px-2 m-0", "ngClass.sm", "mt-2", "ngClass.xs", "mt-2"], [1, "py-1", "lh"], [1, "text-muted", "fw-500"], ["hidden", ""], [1, "py-1"], [1, "py-1", "text-muted", "lh"], ["fxLayoutAlign", "end center", 1, "text-muted"], ["mat-icon-button", "", "matTooltip", "View full details", 3, "routerLink", "mat-dialog-close"], [1, "divider"], [1, "mt-2", "new-price"], [3, "product", "type"], [1, "text-muted", "py-1"], [1, "swiper-slide"], [1, "swiper-lazy", 3, "src"], [1, "swiper-lazy-preloader"]], template: function ProductDialogComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function ProductDialogComponent_Template_button_click_1_listener() { return ctx.close(); });
@@ -3507,14 +3512,14 @@ ProductDialogComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MOD
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate"](ctx.prod.prod_desc);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("mat-dialog-close", ctx.product);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction2"](13, _c0, ctx.prod.id, ctx.prod.name))("mat-dialog-close", ctx.product);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"]("\u20B9", ctx.prod == null ? null : ctx.prod.offer_price, "");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("product", ctx.product)("type", "all");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"]("Please Contact : +91 ", ctx.phone, " ");
-    } }, directives: [_angular_material_button__WEBPACK_IMPORTED_MODULE_7__.MatButton, _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__.MatIcon, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__.MatDialogContent, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_9__.DefaultLayoutDirective, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_9__.DefaultFlexDirective, ngx_swiper_wrapper__WEBPACK_IMPORTED_MODULE_10__.SwiperDirective, _angular_common__WEBPACK_IMPORTED_MODULE_11__.NgForOf, _angular_flex_layout_extended__WEBPACK_IMPORTED_MODULE_12__.DefaultClassDirective, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_9__.DefaultLayoutAlignDirective, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_13__.MatTooltip, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__.MatDialogClose, _controls_controls_component__WEBPACK_IMPORTED_MODULE_3__.ControlsComponent], styles: [".product-dialog .mat-dialog-container {\n  overflow: visible !important;\n}\n.product-dialog .mat-dialog-container .close-btn-outer {\n  position: relative;\n}\n.product-dialog .mat-dialog-container .close-btn-outer button {\n  position: absolute;\n  right: -44px;\n  top: -44px;\n}\n.product-dialog .mat-dialog-container .swiper-slide {\n  text-align: center;\n}\n.product-dialog .mat-dialog-container .swiper-slide img {\n  max-width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2R1Y3QtZGlhbG9nLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNJO0VBQ0ksNEJBQUE7QUFBUjtBQUNRO0VBQ0ksa0JBQUE7QUFDWjtBQUFZO0VBQ0ksa0JBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtBQUVoQjtBQUNRO0VBQ0ksa0JBQUE7QUFDWjtBQUFZO0VBQ0ksZUFBQTtBQUVoQiIsImZpbGUiOiJwcm9kdWN0LWRpYWxvZy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9kdWN0LWRpYWxvZ3tcclxuICAgIC5tYXQtZGlhbG9nLWNvbnRhaW5lcntcclxuICAgICAgICBvdmVyZmxvdzogdmlzaWJsZSAhaW1wb3J0YW50O1xyXG4gICAgICAgIC5jbG9zZS1idG4tb3V0ZXJ7XHJcbiAgICAgICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgICAgICAgICAgYnV0dG9ue1xyXG4gICAgICAgICAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgICAgICAgICAgcmlnaHQ6IC00NHB4O1xyXG4gICAgICAgICAgICAgICAgdG9wOiAtNDRweDtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH1cclxuICAgICAgICAuc3dpcGVyLXNsaWRle1xyXG4gICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgICAgIGltZ3tcclxuICAgICAgICAgICAgICAgIG1heC13aWR0aDogMTAwJTtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH0gICAgICAgIFxyXG4gICAgfVxyXG59Il19 */"], encapsulation: 2 });
+    } }, directives: [_angular_material_button__WEBPACK_IMPORTED_MODULE_7__.MatButton, _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__.MatIcon, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__.MatDialogContent, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_9__.DefaultLayoutDirective, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_9__.DefaultFlexDirective, ngx_swiper_wrapper__WEBPACK_IMPORTED_MODULE_10__.SwiperDirective, _angular_common__WEBPACK_IMPORTED_MODULE_11__.NgForOf, _angular_flex_layout_extended__WEBPACK_IMPORTED_MODULE_12__.DefaultClassDirective, _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_9__.DefaultLayoutAlignDirective, _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_13__.MatTooltip, _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouterLink, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__.MatDialogClose, _controls_controls_component__WEBPACK_IMPORTED_MODULE_3__.ControlsComponent], styles: [".product-dialog .mat-dialog-container {\n  overflow: visible !important;\n}\n.product-dialog .mat-dialog-container .close-btn-outer {\n  position: relative;\n}\n.product-dialog .mat-dialog-container .close-btn-outer button {\n  position: absolute;\n  right: -44px;\n  top: -44px;\n}\n.product-dialog .mat-dialog-container .swiper-slide {\n  text-align: center;\n}\n.product-dialog .mat-dialog-container .swiper-slide img {\n  max-width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2R1Y3QtZGlhbG9nLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNJO0VBQ0ksNEJBQUE7QUFBUjtBQUNRO0VBQ0ksa0JBQUE7QUFDWjtBQUFZO0VBQ0ksa0JBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtBQUVoQjtBQUNRO0VBQ0ksa0JBQUE7QUFDWjtBQUFZO0VBQ0ksZUFBQTtBQUVoQiIsImZpbGUiOiJwcm9kdWN0LWRpYWxvZy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9kdWN0LWRpYWxvZ3tcclxuICAgIC5tYXQtZGlhbG9nLWNvbnRhaW5lcntcclxuICAgICAgICBvdmVyZmxvdzogdmlzaWJsZSAhaW1wb3J0YW50O1xyXG4gICAgICAgIC5jbG9zZS1idG4tb3V0ZXJ7XHJcbiAgICAgICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgICAgICAgICAgYnV0dG9ue1xyXG4gICAgICAgICAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgICAgICAgICAgcmlnaHQ6IC00NHB4O1xyXG4gICAgICAgICAgICAgICAgdG9wOiAtNDRweDtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH1cclxuICAgICAgICAuc3dpcGVyLXNsaWRle1xyXG4gICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgICAgIGltZ3tcclxuICAgICAgICAgICAgICAgIG1heC13aWR0aDogMTAwJTtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH0gICAgICAgIFxyXG4gICAgfVxyXG59Il19 */"], encapsulation: 2 });
 
 
 /***/ }),
